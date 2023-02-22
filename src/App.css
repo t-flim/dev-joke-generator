@@ -86,4 +86,23 @@ button {
   padding: 0.5em 1em;
   border-radius: 10px;
   margin-top: 1.5em;
+  background-color: #EB455F;
+}
+
+button:focus,
+button:hover {
+  border: 5px solid black;
+}
+
+
+
+/* Footer */
+#footer {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  padding-bottom: 0.3em;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
