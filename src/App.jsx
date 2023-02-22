@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="app">
-      <Joke />
+      <Joke {...{ joke }} />
     </div>
   )
 }
