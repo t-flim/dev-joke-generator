@@ -11,9 +11,13 @@ function App() {
   const url = "https://backend-omega-seven.vercel.app/api/getjoke"
   const { data:joke, isLoading, error, fetchData:fetchJoke } = useFetch(url)
 
+  let mainContent
+  if (isLoading) return mainContent = <Loader />
+  if (!isLoading && joke) return mainContent = <Joke {...{ joke }} />
+
   return (
     <div className="app">
-      <Joke {...{ joke }} />
+      {mainContent}
     </div>
   )
 }
