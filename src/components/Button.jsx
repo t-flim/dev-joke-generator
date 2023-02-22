@@ -1,10 +1,10 @@
 
 
-function Button() {
+function Button({ onClick }) {
 
     return (
         <div className="buttons">
-            <button className="fetch-joke">Next Joke</button>
+            <button className="fetch-joke" onClick={onClick}>Next Joke</button>
         </div>
     )
 }

@@ -22,7 +22,7 @@ function App() {
           :
           <>Error</>
       }
-      <Button />
+      <Button onClick={() => fetchJoke(url)}/>
     </div>
   )
 }
