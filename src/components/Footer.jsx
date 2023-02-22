@@ -1,11 +1,12 @@
 import "../App.css"
 
 function Footer() {
+    const currentYear = new Date().getFullYear()
 
     return (
         <footer id="footer">
             <p className="footer-content">
-                &copy; 2023 | thefulim.my
+                &copy; {currentYear} | thefulim.my
             </p>
         </footer>
     )
