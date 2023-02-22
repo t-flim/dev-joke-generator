@@ -4,6 +4,7 @@ import "./App.css"
 import useFetch from "./custom-hook/useFetch"
 
 // components
+import Header from "./components/Header"
 import Joke from "./components/Joke"
 import Loader from "./components/Loader"
 import Button from "./components/Button"
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="app">
+      <Header />
       {(isLoading) ?
           <Loader />
           : (joke && !isLoading)
