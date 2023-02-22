@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto&display=swap');
+
 :root {
   --main-bg: #1A2F4B;
   --main-clr: #F5EDED;
+  --body-font: "Roboto", sans-serif;
+  --special-font: "Mynerve", cursive;
 }
 
 *,
@@ -15,6 +19,15 @@ html,
 body,
 #i-am-root {
   height: 100%;
+}
+
+body {
+  font-size: 1.3rem;
   color: var(--main-clr);
+  font-family: var(--body-font);
   background-color: var(--main-bg);
+}
+
+#joke {
+  font-family: var(--special-font);
 }
