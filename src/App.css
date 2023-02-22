@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shantell+Sans&display=swap');
 
 :root {
-  --main-bg: #1A2F4B;
+  --main-bg: #4D455D;
+  --alt-bg: #1A2F4B;
   --main-clr: #F5EDED;
   --body-font: "Roboto", sans-serif;
-  --special-font: "Mynerve", cursive;
+  --special-font: "Shantell Sans", cursive;
 }
 
 *,
@@ -24,10 +25,65 @@ body,
 body {
   font-size: 1.3rem;
   color: var(--main-clr);
-  font-family: var(--body-font);
+  font-family: var(--special-font);
   background-color: var(--main-bg);
+  text-align: center;
 }
 
+#i-am-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 1em;
+  margin: 0 auto;
+  width: min(85vw, 600px);
+  height: 200px;
+  background-color: var(--alt-bg);
+  border-radius: 15px;
+}
+
+
+/* Joke Component */
 #joke {
+  flex-direction: column;
+}
+
+.question {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1em;
+}
+
+.punchline {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+
+
+/* Loader Component */
+#loader {
+  font-size: 2rem;
+  gap: 0.5em;
+}
+
+
+
+/* Button Component */
+button {
   font-family: var(--special-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin-top: 1.5em;
 }
