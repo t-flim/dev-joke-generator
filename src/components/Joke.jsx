@@ -1,4 +1,4 @@
-
+import "../App.css"
 
 function Joke({ joke }) {
     const { question, punchline } = joke[0]
