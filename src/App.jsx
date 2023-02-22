@@ -7,6 +7,7 @@ import useFetch from "./custom-hook/useFetch"
 import Joke from "./components/Joke"
 import Loader from "./components/Loader"
 import Button from "./components/Button"
+import Footer from "./components/Footer"
 
 function App() {
   const url = "https://backend-omega-seven.vercel.app/api/getjoke"
@@ -23,6 +24,7 @@ function App() {
           <>Error</>
       }
       <Button onClick={() => fetchJoke(url)}/>
+      <Footer />
     </div>
   )
 }
